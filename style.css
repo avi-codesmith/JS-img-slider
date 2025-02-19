@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #111;
+}
+
+.gallery {
+  display: flex;
+  width: 900px;
+  height: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery div {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  padding: 10px;
+  width: 100%;
+  flex: none;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+}
