@@ -11,6 +11,17 @@
   align-items: center;
   justify-content: center;
   background-color: #111;
+  position: relative;
+}
+
+.moon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  height: 40px;
+  width: 40px;
+  stroke: #fff;
+  cursor: pointer;
 }
 
 .gallery {
@@ -39,7 +50,7 @@
   width: 100%;
   filter: invert(30%);
   cursor: pointer;
-  transition: 0.5s ease;
+  transition: 0.1s ease;
 }
 
 .img:hover {
@@ -67,10 +78,10 @@
 
 .icon-left,
 .icon-right {
-  filter: invert(100%);
   cursor: pointer;
   height: 100%;
   width: 100%;
+  stroke: #fff;
 }
 
 .icon-left {
